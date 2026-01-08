@@ -23,12 +23,12 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.IOException
 import javax.inject.Inject
-import com.swordfish.lemuroid.app.mobile.feature.game.ReactActivity
 import kotlinx.coroutines.runBlocking
-import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
+//import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
+
 
 @OptIn(DelicateCoroutinesApi::class)
-class GameActivity : ReactActivity(), DefaultHardwareBackBtnHandler {
+class GameActivity : BaseGameActivity() {
 
     private var serviceController: GameService.GameServiceController? = null
 
@@ -41,10 +41,10 @@ class GameActivity : ReactActivity(), DefaultHardwareBackBtnHandler {
 //        startGameService()
     }
 
-    override
-    fun invokeDefaultOnBackPressed(){
-            super.onBackPressed()
-    }
+//    override
+//    fun invokeDefaultOnBackPressed(){
+//            super.onBackPressed()
+//    }
 
     suspend fun copyAssetFileToFilesDir(
         context: Context,

@@ -44,7 +44,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
-import com.swordfish.lemuroid.R
+import com.github.hoangnguyen.retrolib.R
 import com.swordfish.lemuroid.app.shared.savesync.SaveSyncWork
 
 @Composable

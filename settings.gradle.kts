@@ -34,7 +34,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "RetroStore"
-//include(":app")
+include(":app")
 include(
     ":retrograde-util",
     ":retrograde-app-shared",

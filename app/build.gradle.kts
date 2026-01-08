@@ -1,15 +1,16 @@
-project.extra.apply {
-    set("react", mapOf(
-        "enableHermes" to true,
-        "bundleInDebug" to false,  // QUAN TRỌNG
-        "bundleInRelease" to true
-    ))
-}
+//project.extra.apply {
+//    set("react", mapOf(
+//        "enableHermes" to true,
+//        "bundleInDebug" to false,  // QUAN TRỌNG
+//        "bundleInRelease" to true
+//    ))
+//}
 
 
 plugins {
-    id("com.android.application")
-    id("com.facebook.react")
+    id("com.android.library")
+    id("maven-publish")
+//    id("com.facebook.react")
     id("kotlin-android")
     id("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
@@ -17,58 +18,6 @@ plugins {
 //    id("androidx.baselineprofile")
     id("org.jetbrains.kotlin.plugin.compose")
 //    id("com.google.gms.google-services")
-}
-
-/**
- * This is the configuration block to customize your React Native Android app.
- * By default you don't need to apply any configuration, just uncomment the lines you need.
- */
-react {
-    /* Folders */
-    //   The root of your project, i.e. where "package.json" lives. Default is '../..'
-    // root = file("../../")
-    //   The folder where the react-native NPM package is. Default is ../../node_modules/react-native
-    // reactNativeDir = file("../../node_modules/react-native")
-    //   The folder where the react-native Codegen package is. Default is ../../node_modules/@react-native/codegen
-    // codegenDir = file("../../node_modules/@react-native/codegen")
-    //   The cli.js file which is the React Native CLI entrypoint. Default is ../../node_modules/react-native/cli.js
-    // cliFile = file("../../node_modules/react-native/cli.js")
-
-    /* Variants */
-    //   The list of variants to that are debuggable. For those we're going to
-    //   skip the bundling of the JS bundle and the assets. By default is just 'debug'.
-    //   If you add flavors like lite, prod, etc. you'll have to list your debuggableVariants.
-    // debuggableVariants = ["liteDebug", "prodDebug"]
-
-    /* Bundling */
-    //   A list containing the node command and its flags. Default is just 'node'.
-    // nodeExecutableAndArgs = ["node"]
-    //
-    //   The command to run when bundling. By default is 'bundle'
-    // bundleCommand = "ram-bundle"
-    //
-    //   The path to the CLI configuration file. Default is empty.
-    // bundleConfig = file(../rn-cli.config.js)
-    //
-    //   The name of the generated asset file containing your JS bundle
-    // bundleAssetName = "MyApplication.android.bundle"
-    //
-    //   The entry file for bundle generation. Default is 'index.android.js' or 'index.js'
-    // entryFile = file("../js/MyApplication.android.js")
-    //
-    //   A list of extra flags to pass to the 'bundle' commands.
-    //   See https://github.com/react-native-community/cli/blob/main/docs/commands.md#bundle
-    // extraPackagerArgs = []
-
-    /* Hermes Commands */
-    //   The hermes compiler command to run. By default it is 'hermesc'
-    // hermesCommand = "$rootDir/my-custom-hermesc/bin/hermesc"
-    //
-    //   The list of flags to pass to the Hermes compiler. By default is "-O", "-output-source-map"
-    // hermesFlags = ["-O", "-output-source-map"]
-    debuggableVariants = listOf("freeBundleDebug")
-    /* Autolinking */
-    autolinkLibrariesWithApp()
 }
 
 /**
@@ -93,9 +42,8 @@ android {
     compileSdk = deps.android.compileSdkVersion
 
     defaultConfig {
-        versionCode = 3
-        versionName = "1.0.0" // Always remember to update Cores Tag!
-        applicationId = "com.app"
+//        versionCode = 1
+//        versionName = "1.0.0" // Always remember to update Cores Tag!
         minSdk = deps.android.minSdkVersion
         targetSdk = deps.android.targetSdkVersion
     }
@@ -133,20 +81,46 @@ android {
 //        dependsOn("installFreeBundleDebug")
 //    }
 
-    buildTypes {
-//        getByName("release") {
-//            isMinifyEnabled = true
-//            signingConfig = signingConfigs["release"]
-//            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+//    buildTypes {
+////        getByName("release") {
+////            isMinifyEnabled = true
+////            signingConfig = signingConfigs["release"]
+////            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+////            resValue("string", "lemuroid_name", "Retro Games")
+////        }
+//        getByName("debug") {
+//            isDebuggable = true
+//            isMinifyEnabled = false
+//            isShrinkResources = false
+//            applicationIdSuffix = ""
+//            versionNameSuffix = "-DEBUG"
 //            resValue("string", "lemuroid_name", "Retro Games")
 //        }
-        getByName("debug") {
-            isDebuggable = true
-            isMinifyEnabled = false
-            isShrinkResources = false
-            applicationIdSuffix = ""
-            versionNameSuffix = "-DEBUG"
-            resValue("string", "lemuroid_name", "Retro Games")
+//    }
+
+    afterEvaluate {
+        publishing {
+            publications {
+                create<MavenPublication>("release") {
+                    from(components["release"])
+
+                    groupId = "com.github.hoangnguyen"
+                    artifactId = "retrolib"
+                    version = "1.0.0"
+                }
+            }
+
+            repositories {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/hoangnguyen/retrolib")
+
+                    credentials {
+                        username = findProperty("gpr.user") as String?
+                        password = findProperty("gpr.key") as String?
+                    }
+                }
+            }
         }
     }
 
@@ -166,14 +140,14 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    namespace = "com.swordfish.lemuroid"
+    namespace = "com.github.hoangnguyen.retrolib"
 }
 
 
 
 dependencies {
-    implementation("com.facebook.react:react-android")
-    implementation("com.facebook.react:hermes-android")
+//    implementation("com.facebook.react:react-android")
+//    implementation("com.facebook.react:hermes-android")
     implementation(project(":retrograde-util"))
     implementation(project(":retrograde-app-shared"))
     implementation(project(":lemuroid-metadata-libretro-db"))

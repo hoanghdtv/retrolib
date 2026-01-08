@@ -6,7 +6,7 @@ import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.swordfish.lemuroid.R
+import com.github.hoangnguyen.retrolib.R
 
 fun NavGraphBuilder.composable(
     route: GameMenuRoute,

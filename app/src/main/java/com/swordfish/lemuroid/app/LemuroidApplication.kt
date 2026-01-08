@@ -17,29 +17,29 @@ import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.DaggerApplication
 import javax.inject.Inject
-import com.facebook.react.PackageList
-import com.facebook.react.ReactApplication
-import com.facebook.react.ReactHost
-import com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative
-import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
-import com.swordfish.lemuroid.app.mobile.feature.game.react.packages.NativeNavigatorPackage
+//import com.facebook.react.PackageList
+//import com.facebook.react.ReactApplication
+//import com.facebook.react.ReactHost
+//import com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative
+//import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
+//import com.swordfish.lemuroid.app.mobile.feature.game.react.packages.NativeNavigatorPackage
 import android.app.Application
 import android.os.StrictMode
-import com.reactnativecommunity.asyncstorage.BuildConfig
+//import com.reactnativecommunity.asyncstorage.BuildConfig
 
-class LemuroidApplication : DaggerApplication(), HasWorkerInjector, ImageLoaderFactory,ReactApplication {
+class LemuroidApplication : DaggerApplication(), HasWorkerInjector, ImageLoaderFactory {
 
-    override val reactHost: ReactHost by lazy {
-        getDefaultReactHost(
-            context = applicationContext,
-            packageList =
-                PackageList(this).packages.apply {
-                    // Packages that cannot be autolinked yet can be added manually here, for example:
-                    // add(MyReactNativePackage())
-                    add(NativeNavigatorPackage())
-                },
-        )
-    }
+//    override val reactHost: ReactHost by lazy {
+//        getDefaultReactHost(
+//            context = applicationContext,
+//            packageList =
+//                PackageList(this).packages.apply {
+//                    // Packages that cannot be autolinked yet can be added manually here, for example:
+//                    // add(MyReactNativePackage())
+//                    add(NativeNavigatorPackage())
+//                },
+//        )
+//    }
 //    override fun getUseDeveloperSupport(): Boolean {
 //        return BuildConfig.DEBUG
 //    }
@@ -50,7 +50,7 @@ class LemuroidApplication : DaggerApplication(), HasWorkerInjector, ImageLoaderF
     @SuppressLint("CheckResult")
     override fun onCreate() {
         super.onCreate()
-        loadReactNative(this)
+//        loadReactNative(this)
 
         val initializeComponent =
             if (isMainProcess()) {
@@ -62,14 +62,14 @@ class LemuroidApplication : DaggerApplication(), HasWorkerInjector, ImageLoaderF
         AppInitializer.getInstance(this).initializeComponent(initializeComponent)
 
         DynamicColors.applyToActivitiesIfAvailable(this)
-        if (BuildConfig.DEBUG) {
-            StrictMode.setThreadPolicy(
-                StrictMode.ThreadPolicy.Builder()
-                    .detectAll()
-                    .penaltyLog() // Chỉ log, không crash
-                    .build()
-            )
-        }
+//        if (BuildConfig.DEBUG) {
+//            StrictMode.setThreadPolicy(
+//                StrictMode.ThreadPolicy.Builder()
+//                    .detectAll()
+//                    .penaltyLog() // Chỉ log, không crash
+//                    .build()
+//            )
+//        }
     }
 
     override fun attachBaseContext(base: Context) {

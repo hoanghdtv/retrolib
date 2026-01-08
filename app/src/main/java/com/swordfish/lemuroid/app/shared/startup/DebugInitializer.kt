@@ -3,7 +3,7 @@ package com.swordfish.lemuroid.app.shared.startup
 import android.content.Context
 import android.os.StrictMode
 import androidx.startup.Initializer
-import com.swordfish.lemuroid.BuildConfig
+import com.github.hoangnguyen.retrolib.BuildConfig
 import timber.log.Timber
 
 class DebugInitializer : Initializer<Unit> {

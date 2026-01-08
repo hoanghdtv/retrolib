@@ -8,7 +8,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
-import com.swordfish.lemuroid.R
+import com.github.hoangnguyen.retrolib.R
 
 @Composable
 fun LemuroidEmptyView(

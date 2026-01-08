@@ -12,7 +12,7 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.fragment.app.FragmentContainerView
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
-import com.facebook.react.ReactFragment
+//import com.facebook.react.ReactFragment
 import com.swordfish.lemuroid.app.shared.game.BaseGameActivity
 import com.swordfish.lemuroid.app.shared.game.BaseGameScreenViewModel
 import com.swordfish.lemuroid.app.shared.main.BusyActivity
@@ -40,18 +40,18 @@ public fun ReactNativeHost(
                 )
             }.also { container ->
                 // attach fragment once when the container is created
-                if (fm.findFragmentByTag(fragmentTag) == null) {
-                    // Use ReactFragment.Builder from React Native
-                    val reactFragment = ReactFragment.Builder()
-                        .setComponentName(moduleName)
-                        .setLaunchOptions(Bundle().apply { putString("message", "my value") }) // or pass Bundle with initial props
-                        .build()
-
-                    fm.commit {
-                        replace(container.id, reactFragment, fragmentTag)
-                        setReorderingAllowed(true)
-                    }
-                }
+//                if (fm.findFragmentByTag(fragmentTag) == null) {
+//                    // Use ReactFragment.Builder from React Native
+//                    val reactFragment = ReactFragment.Builder()
+//                        .setComponentName(moduleName)
+//                        .setLaunchOptions(Bundle().apply { putString("message", "my value") }) // or pass Bundle with initial props
+//                        .build()
+//
+//                    fm.commit {
+//                        replace(container.id, reactFragment, fragmentTag)
+//                        setReorderingAllowed(true)
+//                    }
+//                }
             }
         },
         update = { /* no-op */ },

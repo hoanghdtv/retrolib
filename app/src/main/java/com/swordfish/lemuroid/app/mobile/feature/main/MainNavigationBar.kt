@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
-import com.reactnativecommunity.asyncstorage.BuildConfig
+//import com.reactnativecommunity.asyncstorage.BuildConfig
 
 @Composable
 fun MainNavigationBar(
@@ -28,7 +28,6 @@ fun MainNavigationBar(
     ) {
         LemuroidNavigationBar(currentRoute, navController)
     }
-    BuildConfig.DEBUG
 }
 
 @Composable

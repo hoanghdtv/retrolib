@@ -20,7 +20,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.swordfish.lemuroid.R
+import com.github.hoangnguyen.retrolib.R
 
 fun NavGraphBuilder.composable(
     route: MainRoute,

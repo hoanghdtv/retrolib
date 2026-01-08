@@ -18,7 +18,6 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.FrameLayout
-import com.swordfish.lemuroid.R
 import kotlinx.coroutines.runBlocking
 import android.graphics.Color
 import androidx.lifecycle.viewmodel.compose.viewModel

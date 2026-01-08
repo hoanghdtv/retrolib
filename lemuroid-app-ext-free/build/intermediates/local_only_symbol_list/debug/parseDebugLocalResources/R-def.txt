@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+string game_loader_error_load_core
+string game_loading_download_core
+string installing_core_notification_message
+string installing_core_notification_title

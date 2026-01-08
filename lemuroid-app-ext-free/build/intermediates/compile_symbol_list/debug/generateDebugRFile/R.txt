@@ -1,0 +1,4 @@
+int string game_loader_error_load_core 0x0
+int string game_loading_download_core 0x0
+int string installing_core_notification_message 0x0
+int string installing_core_notification_title 0x0

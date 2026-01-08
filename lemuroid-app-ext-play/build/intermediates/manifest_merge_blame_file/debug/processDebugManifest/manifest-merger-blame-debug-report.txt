@@ -1,0 +1,19 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.swordfish.lemuroid.ext"
+5    tools:ignore="MissingLeanbackLauncher,ImpliedTouchscreenHardware,MissingLeanbackSupport" >
+6
+7    <uses-sdk android:minSdkVersion="1" />
+8
+9    <application>
+9-->/Users/tomgau/Documents/GitHub/RetroStore/android/lemuroid-app-ext-play/src/main/AndroidManifest.xml:5:5-9:19
+10        <activity
+10-->/Users/tomgau/Documents/GitHub/RetroStore/android/lemuroid-app-ext-play/src/main/AndroidManifest.xml:6:9-8:52
+11            android:name="com.swordfish.lemuroid.ext.feature.savesync.ActivateGoogleDriveActivity"
+11-->/Users/tomgau/Documents/GitHub/RetroStore/android/lemuroid-app-ext-play/src/main/AndroidManifest.xml:7:13-99
+12            android:theme="@style/InvisibleTheme" />
+12-->/Users/tomgau/Documents/GitHub/RetroStore/android/lemuroid-app-ext-play/src/main/AndroidManifest.xml:8:13-50
+13    </application>
+14
+15</manifest>

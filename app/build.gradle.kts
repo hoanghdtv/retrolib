@@ -100,15 +100,15 @@ android {
 
     afterEvaluate {
         publishing {
-            publications {
-                create<MavenPublication>("release") {
-                    from(components["release"])
-
-                    groupId = "com.github.hoanghdtv"
-                    artifactId = "retrolib"
-                    version = "1.0.2"
-                }
-            }
+//            publications {
+//                create<MavenPublication>("release") {
+//                    from(components["release"])
+//
+//                    groupId = "com.github.hoanghdtv"
+//                    artifactId = "retrolib"
+//                    version = "1.0.2"
+//                }
+//            }
 
             repositories {
                 maven {
@@ -142,6 +142,16 @@ android {
         jvmTarget = "17"
     }
     namespace = "com.github.hoanghdtv.retrolib"
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
 
 

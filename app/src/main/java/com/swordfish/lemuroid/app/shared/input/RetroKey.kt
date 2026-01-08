@@ -1,7 +1,7 @@
 package com.swordfish.lemuroid.app.shared.input
 
 import android.content.Context
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 import kotlinx.serialization.Serializable
 
 @Serializable

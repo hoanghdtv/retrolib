@@ -104,7 +104,7 @@ android {
                 create<MavenPublication>("release") {
                     from(components["release"])
 
-                    groupId = "com.github.hoangnguyen"
+                    groupId = "com.github.hoanghdtv"
                     artifactId = "retrolib"
                     version = "1.0.0"
                 }
@@ -113,7 +113,7 @@ android {
             repositories {
                 maven {
                     name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/hoangnguyen/retrolib")
+                    url = uri("https://maven.pkg.github.com/hoanghdtv/retrolib")
 
                     credentials {
                         username = findProperty("gpr.user") as String?
@@ -140,7 +140,7 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    namespace = "com.github.hoangnguyen.retrolib"
+    namespace = "com.github.hoanghdtv.retrolib"
 }
 
 

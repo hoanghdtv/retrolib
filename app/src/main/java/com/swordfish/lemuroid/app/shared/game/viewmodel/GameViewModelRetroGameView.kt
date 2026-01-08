@@ -6,8 +6,8 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
-import com.github.hoangnguyen.retrolib.BuildConfig
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.BuildConfig
+import com.github.hoanghdtv.retrolib.R
 import com.swordfish.lemuroid.app.mobile.feature.settings.SettingsManager
 import com.swordfish.lemuroid.app.shared.game.ShaderChooser
 import com.swordfish.lemuroid.app.shared.rumble.RumbleManager

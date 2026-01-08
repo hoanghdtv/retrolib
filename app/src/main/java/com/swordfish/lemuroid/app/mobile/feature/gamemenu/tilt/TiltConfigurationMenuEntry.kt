@@ -1,7 +1,7 @@
 package com.swordfish.lemuroid.app.mobile.feature.gamemenu.tilt
 
 import android.view.KeyEvent
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 import com.swordfish.touchinput.radial.sensors.TiltConfiguration
 
 enum class TiltConfigurationMenuEntry(val configuration: TiltConfiguration, val descriptionId: Int) {

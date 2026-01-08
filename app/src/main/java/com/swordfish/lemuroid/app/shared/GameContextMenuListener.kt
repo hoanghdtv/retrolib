@@ -2,7 +2,7 @@ package com.swordfish.lemuroid.app.shared
 
 import android.view.ContextMenu
 import android.view.View
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 import com.swordfish.lemuroid.lib.library.db.entity.Game
 
 class GameContextMenuListener(

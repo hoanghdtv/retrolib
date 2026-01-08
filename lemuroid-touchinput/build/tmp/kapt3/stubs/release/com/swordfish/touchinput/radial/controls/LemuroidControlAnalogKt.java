@@ -1,0 +1,5 @@
+package com.swordfish.touchinput.radial.controls;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 2, xi = 48, d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a4\u0010\u0000\u001a\u00020\u00012\b\b\u0002\u0010\u0003\u001a\u00020\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007R\u00020\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\b\t\u0010\n\u0082\u0002\u0007\n\u0005\b\u00a1\u001e0\u0001\u00a8\u0006\u000b"}, d2 = {"LemuroidControlAnalog", "", "Lgg/padkit/PadKitScope;", "modifier", "Landroidx/compose/ui/Modifier;", "analogPressId", "Lgg/padkit/ids/Id$Key;", "id", "Lgg/padkit/ids/Id$ContinuousDirection;", "LemuroidControlAnalog-vuHqTgM", "(Lgg/padkit/PadKitScope;Landroidx/compose/ui/Modifier;Lgg/padkit/ids/Id$Key;I)V", "lemuroid-touchinput_release"})
+public final class LemuroidControlAnalogKt {
+}

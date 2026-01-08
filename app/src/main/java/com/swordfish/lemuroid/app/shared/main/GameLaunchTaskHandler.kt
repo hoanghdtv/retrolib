@@ -3,7 +3,7 @@ package com.swordfish.lemuroid.app.shared.main
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 import com.swordfish.lemuroid.app.shared.game.BaseGameActivity
 import com.swordfish.lemuroid.app.shared.gamecrash.GameCrashActivity
 import com.swordfish.lemuroid.app.shared.savesync.SaveSyncWork

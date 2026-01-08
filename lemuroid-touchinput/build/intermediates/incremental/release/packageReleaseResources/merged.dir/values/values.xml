@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="touch_control_background">#10FFFFFF</color>
+    <color name="touch_control_dark_background">#80404040</color>
+    <color name="touch_control_dark_stroke">#08FFFFFF</color>
+    <color name="touch_control_normal">#80808080</color>
+    <color name="touch_control_stroke">#08FFFFFF</color>
+    <color name="touch_control_stroke_light">#08FFFFFF</color>
+    <color name="touch_control_text">#80FFFFFF</color>
+    <dimen name="touch_control_stroke_size">2dp</dimen>
+    <integer name="touch_control_stroke_size_int">2</integer>
+    <string name="pref_key_virtual_pad_margin_x" translatable="false">virtual_pad_margin_x</string>
+    <string name="pref_key_virtual_pad_margin_y" translatable="false">virtual_pad_margin_y</string>
+    <string name="pref_key_virtual_pad_rotation" translatable="false">virtual_pad_rotation</string>
+    <string name="pref_key_virtual_pad_scale" translatable="false">virtual_pad_scale</string>
+    <string name="touch_customize_button_done">Done</string>
+    <string name="touch_customize_button_reset">Reset</string>
+    <string name="touch_customize_info">Drag and Pinch controls to change position and size</string>
+</resources>

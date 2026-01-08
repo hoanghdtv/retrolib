@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.view.InputDevice
 import android.view.KeyEvent
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async

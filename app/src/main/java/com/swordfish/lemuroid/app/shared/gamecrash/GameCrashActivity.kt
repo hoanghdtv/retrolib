@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.core.view.isVisible
-import com.github.hoangnguyen.retrolib.R
+import com.github.hoanghdtv.retrolib.R
 
 class GameCrashActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

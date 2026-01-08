@@ -114,10 +114,11 @@ android {
                 maven {
                     name = "GitHubPackages"
                     url = uri("https://maven.pkg.github.com/hoanghdtv/retrolib")
-
                     credentials {
-                        username = findProperty("gpr.user") as String?
-                        password = findProperty("gpr.key") as String?
+                        username = project.findProperty("gpr.user") as String?
+                            ?: System.getenv("GITHUB_ACTOR")
+                        password = project.findProperty("gpr.key") as String?
+                            ?: System.getenv("GITHUB_TOKEN")
                     }
                 }
             }

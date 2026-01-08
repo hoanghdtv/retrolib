@@ -1,0 +1,225 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.hoanghdtv",
+    "module": "lemuroid-app-ext-play",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lemuroid-app-ext-play-1.0.0.aar",
+          "url": "lemuroid-app-ext-play-1.0.0.aar",
+          "size": 93198,
+          "sha512": "217da053bc604c323a07bacbeafd7595afe9a2dfdc4e2cc3ecb0eb31c5bac80f346985e471ed540d46e69485ff3c88d2de726681fdb60812c5d3eda72ce0666a",
+          "sha256": "f31ce99d6b461d24cfbc68de83f2715ef719f1f75e9764673c353542a5e74f81",
+          "sha1": "ccd3ad6ecd0e5940f9d9c86a79e39e2d0d36ebed",
+          "md5": "624855acdf7b60f8d6ff66ab741b4370"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.hoanghdtv",
+          "module": "retrograde-util",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.github.hoanghdtv",
+          "module": "retrograde-app-shared",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.9.0"
+          }
+        },
+        {
+          "group": "com.google.android.play",
+          "module": "feature-delivery",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.google.android.play",
+          "module": "feature-delivery-ktx",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.google.android.play",
+          "module": "review",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "com.google.android.play",
+          "module": "review-ktx",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "com.google.api-client",
+          "module": "google-api-client",
+          "version": {
+            "requires": "1.32.1"
+          }
+        },
+        {
+          "group": "com.google.api-client",
+          "module": "google-api-client-android",
+          "version": {
+            "requires": "1.32.1"
+          }
+        },
+        {
+          "group": "com.google.apis",
+          "module": "google-api-services-drive",
+          "version": {
+            "requires": "v3-rev20210725-1.32.1"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-auth",
+          "version": {
+            "requires": "17.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-play-services",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "androidx.leanback",
+          "module": "leanback",
+          "version": {
+            "requires": "1.1.0-rc01"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.19"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lemuroid-app-ext-play-1.0.0.aar",
+          "url": "lemuroid-app-ext-play-1.0.0.aar",
+          "size": 93198,
+          "sha512": "217da053bc604c323a07bacbeafd7595afe9a2dfdc4e2cc3ecb0eb31c5bac80f346985e471ed540d46e69485ff3c88d2de726681fdb60812c5d3eda72ce0666a",
+          "sha256": "f31ce99d6b461d24cfbc68de83f2715ef719f1f75e9764673c353542a5e74f81",
+          "sha1": "ccd3ad6ecd0e5940f9d9c86a79e39e2d0d36ebed",
+          "md5": "624855acdf7b60f8d6ff66ab741b4370"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "lemuroid-app-ext-play-1.0.0-sources.jar",
+          "url": "lemuroid-app-ext-play-1.0.0-sources.jar",
+          "size": 26201,
+          "sha512": "dfbd98559b13451dafa84b2a8587729572822b82280b7646bba0af9d668bdd1d08cf9c2a58239714597308a1b15b735d31624b9ddbc07795b1bbd2cb5cdcc9ea",
+          "sha256": "c831a80716214fb49451a77c042ad2a94ca9e7d19f0f8ac86568e0274c0ff1b9",
+          "sha1": "571756fd994360a59b9d0670d90a17a86b3d2253",
+          "md5": "ea6cb1b8983c15f0955d81e37f94bae9"
+        }
+      ]
+    }
+  ]
+}

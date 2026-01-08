@@ -1,0 +1,206 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.hoanghdtv",
+    "module": "retrograde-util",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.jakewharton.timber",
+          "module": "timber",
+          "version": {
+            "requires": "5.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "retrograde-util-1.0.0.aar",
+          "url": "retrograde-util-1.0.0.aar",
+          "size": 118419,
+          "sha512": "42fadbd3c11407768fa68201286a3d7f0a8842a1adc6c0e0575473dbc47ad3e6045220f30c9403ca049a009d88097ee3ae7123470634b205bf3fcd0f20d5c920",
+          "sha256": "7576c48a9db9de094073a36a107dc7f59ae23bd76ac252365feaac45faccc074",
+          "sha1": "ddc1fc72e4597506e8c469659f9363254ffb056b",
+          "md5": "c955f6a433d9e5c71b85ccbc13004035"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.02.02"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-unit-android"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.2"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "androidx.documentfile",
+          "module": "documentfile",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "androidx.preference",
+          "module": "preference-ktx",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.1"
+          }
+        },
+        {
+          "group": "androidx.paging",
+          "module": "paging-common",
+          "version": {
+            "requires": "3.2.1"
+          }
+        },
+        {
+          "group": "androidx.paging",
+          "module": "paging-runtime",
+          "version": {
+            "requires": "3.2.1"
+          }
+        },
+        {
+          "group": "com.jakewharton.timber",
+          "module": "timber",
+          "version": {
+            "requires": "5.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "retrograde-util-1.0.0.aar",
+          "url": "retrograde-util-1.0.0.aar",
+          "size": 118419,
+          "sha512": "42fadbd3c11407768fa68201286a3d7f0a8842a1adc6c0e0575473dbc47ad3e6045220f30c9403ca049a009d88097ee3ae7123470634b205bf3fcd0f20d5c920",
+          "sha256": "7576c48a9db9de094073a36a107dc7f59ae23bd76ac252365feaac45faccc074",
+          "sha1": "ddc1fc72e4597506e8c469659f9363254ffb056b",
+          "md5": "c955f6a433d9e5c71b85ccbc13004035"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "retrograde-util-1.0.0-sources.jar",
+          "url": "retrograde-util-1.0.0-sources.jar",
+          "size": 67366,
+          "sha512": "000b48aac490cbdb1cc0feb062e9a8a9305cfdc1c2f25f5f4b63e05d5b9cd79b21220717d4e9fc8d52586336e4ade421f651226943808c97d1e118dd8e41f2ff",
+          "sha256": "816abe278752cfd3050311ebc19d2b7b58c8072117ab1e8e7afc11e10d0e466d",
+          "sha1": "84c457e6a61d4da8d5c9f54be506d1c5113afcca",
+          "md5": "1027bddbb9cda57e7396fe8bd5fba532"
+        }
+      ]
+    }
+  ]
+}

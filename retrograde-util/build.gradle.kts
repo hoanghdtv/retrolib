@@ -3,6 +3,8 @@ plugins {
     id("kotlin-android")
     id("kotlin-kapt")
     id("org.jetbrains.kotlin.plugin.compose")
+    id("maven-publish")
+
 }
 
 android {
@@ -20,6 +22,8 @@ android {
         kotlinCompilerExtensionVersion = deps.versions.kotlinExtension
     }
 }
+
+
 
 dependencies {
     api(deps.libs.timber)
@@ -40,4 +44,17 @@ dependencies {
 
     implementation(deps.libs.androidx.paging.common)
     implementation(deps.libs.androidx.paging.runtime)
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.hoanghdtv"
+            artifactId = "retrograde-util"
+            version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }

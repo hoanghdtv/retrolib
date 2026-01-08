@@ -1,0 +1,219 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.hoanghdtv",
+    "module": "lemuroid-touchinput",
+    "version": "unspecified",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.swordfish90",
+          "module": "padkit",
+          "version": {
+            "requires": "1.0.0-beta1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-collections-immutable",
+          "version": {
+            "requires": "0.3.8"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lemuroid-touchinput-unspecified.aar",
+          "url": "lemuroid-touchinput-unspecified.aar",
+          "size": 729142,
+          "sha512": "c71ba0ea8afc9faaa13f80906a6c552a3a596019fb097d79a106f6e05bf692fda95191473fabb5b840fbc4d1a15a058f6520c476f458b38c2b2ade470eb69856",
+          "sha256": "b86539f2e8be60ed11b9d6642581e5d8713d53137f0c98b82883895ea928b547",
+          "sha1": "d0674e72a8232b675910ef88114a8d5a5e403e30",
+          "md5": "58a408e27759adff7d7e5f6ea1273820"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "com.github.hoanghdtv",
+          "module": "retrograde-util",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.02.02"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-geometry"
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.2"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.preference",
+          "module": "preference-ktx",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "com.fredporciuncula",
+          "module": "flow-preferences",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib"
+        },
+        {
+          "group": "io.github.swordfish90",
+          "module": "padkit",
+          "version": {
+            "requires": "1.0.0-beta1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-collections-immutable",
+          "version": {
+            "requires": "0.3.8"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lemuroid-touchinput-unspecified.aar",
+          "url": "lemuroid-touchinput-unspecified.aar",
+          "size": 729142,
+          "sha512": "c71ba0ea8afc9faaa13f80906a6c552a3a596019fb097d79a106f6e05bf692fda95191473fabb5b840fbc4d1a15a058f6520c476f458b38c2b2ade470eb69856",
+          "sha256": "b86539f2e8be60ed11b9d6642581e5d8713d53137f0c98b82883895ea928b547",
+          "sha1": "d0674e72a8232b675910ef88114a8d5a5e403e30",
+          "md5": "58a408e27759adff7d7e5f6ea1273820"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "lemuroid-touchinput-unspecified-sources.jar",
+          "url": "lemuroid-touchinput-unspecified-sources.jar",
+          "size": 120876,
+          "sha512": "63deb797a013e4306ce49549b625a6c091b545ca6836c3115dd00ca09577e25ddb5e3c487ec4e85187eeb95637f281259fe3e309e149b45e0bc893482933b717",
+          "sha256": "7390b1f7d46a3d4beba9cbbcfe38240feb56ee0285f05b3eafdee54c885d3e1e",
+          "sha1": "3a3f886bc8a40506f24f218a2415fe0f39283ccf",
+          "md5": "8e539139af014e5aa54161a99792a7d0"
+        }
+      ]
+    }
+  ]
+}

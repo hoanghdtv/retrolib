@@ -5,7 +5,23 @@ plugins {
     id("kotlinx-serialization")
     id("kotlin-parcelize")
     id("org.jetbrains.kotlin.plugin.compose")
+    id("maven-publish")
+
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.hoanghdtv"
+            artifactId = "lemuroid-touchinput"
+//            version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+
 
 android {
     kotlinOptions {
@@ -17,6 +33,9 @@ android {
     }
     namespace = "com.swordfish.touchinput.controller"
     compileSdk = deps.android.compileSdkVersion
+    defaultConfig {
+//        version = "1.0.0"
+    }
 
     buildFeatures {
         compose = true

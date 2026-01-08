@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -12,4 +13,17 @@ android {
 
 dependencies {
     implementation(kotlin(deps.libs.kotlin.stdlib))
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.hoanghdtv"
+            artifactId = "lemuroid-bundled-cores"
+            version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }

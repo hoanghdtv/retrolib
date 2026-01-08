@@ -1,0 +1,14 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml:3:1-13
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml:3:1-13
+	package
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-metadata-libretro-db/src/main/AndroidManifest.xml

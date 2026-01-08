@@ -10,6 +10,7 @@
 plugins {
     id("com.android.library")
     id("maven-publish")
+//    id ("com.kezong.fat-aar")
 //    id("com.facebook.react")
     id("kotlin-android")
     id("kotlin-kapt")
@@ -56,6 +57,17 @@ android {
         }
         resources {
             excludes += setOf("META-INF/DEPENDENCIES", "META-INF/library_release.kotlin_module")
+        }
+    }
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/DEPENDENCIES",
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/NOTICE",
+                "META-INF/NOTICE.txt"
+            )
         }
     }
 
@@ -147,6 +159,9 @@ android {
 publishing {
     publications {
         create<MavenPublication>("release") {
+            groupId = "com.github.hoanghdtv"
+            artifactId = "retrolib"
+            version = "1.0.0"
             afterEvaluate {
                 from(components["release"])
             }
@@ -159,6 +174,7 @@ publishing {
 dependencies {
 //    implementation("com.facebook.react:react-android")
 //    implementation("com.facebook.react:hermes-android")
+
     implementation(project(":retrograde-util"))
     implementation(project(":retrograde-app-shared"))
     implementation(project(":lemuroid-metadata-libretro-db"))
@@ -252,6 +268,8 @@ dependencies {
 
     kapt(deps.libs.dagger.android.processor)
     kapt(deps.libs.dagger.compiler)
+
+
 }
 
 //fun usePlayDynamicFeatures(): Boolean {

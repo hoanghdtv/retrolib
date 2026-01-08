@@ -3,7 +3,9 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
+        maven("https://jitpack.io")
     }
     resolutionStrategy {
         eachPlugin {
@@ -34,7 +36,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RetroStore"
+rootProject.name = "retrolib"
 include(":app")
 include(
     ":retrograde-util",

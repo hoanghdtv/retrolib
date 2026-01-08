@@ -5,6 +5,7 @@ plugins {
     id("kotlin-android")
     id("kotlin-kapt")
     id("kotlinx-serialization")
+    id("maven-publish")
 }
 
 android {
@@ -67,5 +68,18 @@ android {
     kotlinOptions {
         this as KotlinJvmOptions
         jvmTarget = "17"
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.hoanghdtv"
+            artifactId = "retrograde-app-shared"
+            version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
     }
 }

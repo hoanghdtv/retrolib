@@ -1,0 +1,28 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:1:1-10:12
+	package
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:1:11-69
+	tools:ignore
+		ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:3:5-93
+application
+ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:5:5-9:19
+activity#com.swordfish.lemuroid.ext.feature.savesync.ActivateGoogleDriveActivity
+ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:6:9-8:52
+	android:theme
+		ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:8:13-50
+	android:name
+		ADDED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml:7:13-99
+uses-sdk
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml
+INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tomgau/Desktop/WORK/retrolib/lemuroid-app-ext-play/src/main/AndroidManifest.xml

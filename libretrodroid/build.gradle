@@ -70,17 +70,18 @@ android {
     }
 }
 
-//publishing {
-//    publications {
-//        release(MavenPublication) {
-//            groupId = 'com.swordfish'
-//            artifactId = 'libretrodroid'
-//            afterEvaluate {
-//                from components.release
-//            }
-//        }
-//    }
-//}
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.hoanghdtv'
+            artifactId = 'libretrodroid'
+            version = '1.0.0'
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

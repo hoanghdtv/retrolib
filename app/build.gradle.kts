@@ -106,7 +106,7 @@ android {
 
                     groupId = "com.github.hoanghdtv"
                     artifactId = "retrolib"
-                    version = "1.0.0"
+                    version = "1.0.2"
                 }
             }
 
